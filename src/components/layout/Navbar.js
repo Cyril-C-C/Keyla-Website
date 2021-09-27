@@ -1,8 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom';
 
-const Navbar = ({ icon }) => {
+const Navbar = () => {
   return (
     <header
       className='header'
@@ -10,23 +8,23 @@ const Navbar = ({ icon }) => {
       style={{ backgroundImage: `url(Bg.png)` }}
     >
       <section className='navbar' id='navbar'>
-        <h1>
-          <img src='keyla.png' alt='logo' />
-        </h1>
-        <ul>
-          <i className={icon} onclick='showMenu()'></i>
-        </ul>
+        <section className='logo'>
+          <h1>
+            <a href='#!'>
+              <img src='keyla.png' alt='logo' />
+            </a>
+          </h1>
+        </section>
+        <section className='bar'>
+          <h1>
+            <a href='#!'>
+              <img src='bar.png' alt='logo' />
+            </a>
+          </h1>
+        </section>
       </section>
     </header>
   );
-};
-
-Navbar.propTypes = {
-  icon: PropTypes.string,
-};
-
-Navbar.defaultProps = {
-  icon: 'fa fa-bars',
 };
 
 export default Navbar;
