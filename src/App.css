@@ -353,6 +353,17 @@ table th {
   background: var(--light-color);
 }
 
+/* Header */
+.header{
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)); */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -361,14 +372,14 @@ table th {
   padding: 0.7rem 2rem;
   z-index: 1;
   width: 100%;
-  border-bottom: solid 1px var(--primary-color);
+  /* border-bottom: solid 1px var(--primary-color); */
   opacity: 0.9;
   margin-bottom: 1rem;
 }
 
-.navbar ul {
+/* .navbar ul {
   display: flex;
-}
+} */
 
 .navbar a {
   color: #fff;
@@ -382,6 +393,103 @@ table th {
 
 .navbar .welcome span {
   margin-right: 0.6rem;
+}
+
+/* Hero-Page */
+.hero{
+  width: 90%;
+  position: absolute;
+  top: 62%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-page{
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.hero-page p{
+  margin: 0.63rem 0 2.5rem;
+  font-size: 0.875rem;
+  color: whitesmoke;
+}
+
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 0.0625rem solid blue;
+  border-radius: 0.2rem;
+  padding: 0.75rem 2.125rem;
+  font-size: 0.8125rem;
+  background: blue;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover{
+  border: 0.0625rem solid white;
+  background: white;
+  transition: 1s;
+}
+
+.hero-page img{
+  width: 30%;
+  margin: 3rem 15rem 0 0;
+}
+
+.hero-page img:hover{
+  transform: scale(1.25);
+}
+
+/* Footer */
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6rem;
+  border-top: 0.1rem solid grey;
+}
+
+.nav p{
+  color: white;
+  margin-top: 2rem;
+}
+
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.nav-links ul li a::after{
+  content: "";
+  width: 0%;
+  height: 0.125rem;
+  background: white;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after{
+  width: 100%;
 }
 
 /* Animation (Add After) */
@@ -439,4 +547,10 @@ table th {
     text-align: center;
     justify-content: center;
   }
+
+  /* Hero-Page */
+  .hero-page img{
+    display: none;
+  }
 }
+
