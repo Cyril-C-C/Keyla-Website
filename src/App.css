@@ -353,7 +353,23 @@ table th {
   background: var(--light-color);
 }
 
+/* Loader */
+
+.keylaSpinner img{
+  position: absolute;
+  width: 10rem;
+  top: 30%;
+  left: 45%;
+}
+
+.clipLoader{
+  position: absolute;
+  top: 24%;
+  left: 39%;
+} 
+
 /* Header */
+
 .header {
   min-height: 100vh;
   width: 100%;

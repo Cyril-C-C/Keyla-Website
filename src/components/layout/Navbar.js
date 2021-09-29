@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { SidebarData } from './SidebarData';
+import './Navbar.css';
 
 const Navbar = () => {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <header
       className='header'
@@ -17,11 +24,30 @@ const Navbar = () => {
         </section>
         <section className='bar'>
           <h1>
-            <a href='#!'>
-              <i className='fa fa-bars fa-2x' aria-hidden='true'></i>
-            </a>
+            <Link href='#'>
+              <i className='fa fa-bars fa-2x' aria-hidden='true' onClick={showSidebar}></i>
+            </Link>
           </h1>
         </section>
+        <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+          <ul className='nav-menu-items' onClick={showSidebar}>
+            <li className='navbar-toggle'>
+              <Link to='#' className='menu-bars'>
+              <i className='fa fa-close fa-2x' />
+              </Link>
+            </li>
+            {SidebarData.map((item, index) => {
+              return (
+                <li key={index} className={item.cName}>
+                  <Link to={item.path}>
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </section>
     </header>
   );

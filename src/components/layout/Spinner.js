@@ -1,20 +1,24 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import spinner from './spinner.png';
-import Spin from './Spinner.gif';
+import ClipLoader from 'react-spinners/ClipLoader';
 
 export const Spinner = () => {
+  let [loading] = useState(true);
+  let [color] = useState('#2d9cdb');
+
   return (
     <Fragment>
-      <img
-        src={spinner}
-        style={{ width: '10rem', margin: 'auto', display: 'block' }}
-        alt='Loading...'
-      />
-      <img
-        src={Spin}
-        style={{ width: '10rem', margin: 'auto', display: 'block' }}
-        alt='Loading...'
-      />
+      <section className='loader'>
+        <section className='keylaSpinner'>
+          <img
+            src={spinner}
+            alt='Loading...'
+          />
+        </section>
+        <section className='clipLoader'>
+          <ClipLoader color={color} loading={loading} size={300} />
+        </section>
+      </section>
     </Fragment>
   );
 };
