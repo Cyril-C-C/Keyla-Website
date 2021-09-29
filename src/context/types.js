@@ -1,2 +1,5 @@
 export const SET_LOADING = 'SET_LOADING';
 export const REMOVE_SPINNER = 'REMOVE_SPINNER';
+export const ADD_CONTACT = 'ADD_CONTACT';
+export const SET_CURRENT = 'SET_CURRENT';
+export const CLEAR_CURRENT = 'CLEAR_CURRENT';

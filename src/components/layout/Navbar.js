@@ -11,14 +11,14 @@ const Navbar = () => {
         <section className='logo'>
           <h1>
             <a href='#!'>
-              <img src='keyla.png' alt='logo' />
+              <img src="keyla.png" alt="" />
             </a>
           </h1>
         </section>
         <section className='bar'>
           <h1>
             <a href='#!'>
-              <img src='bar.png' alt='logo' />
+              <i className='fa fa-bars fa-2x' aria-hidden='true'></i>
             </a>
           </h1>
         </section>

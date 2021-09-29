@@ -354,7 +354,7 @@ table th {
 }
 
 /* Header */
-.header{
+.header {
   min-height: 100vh;
   width: 100%;
   background-position: center;
@@ -368,9 +368,9 @@ table th {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 3rem;
   z-index: 1;
-  width: 90%;
+  width: 95%;
   opacity: 0.9;
   margin-top: 1.5rem;
 }
@@ -379,8 +379,8 @@ table th {
   width: 12rem;
 }
 
-.bar {
-  width: 2.5rem;
+.bar .fa:hover {
+  color: #2d9cdb;
 }
 
 .navbar a {
@@ -398,22 +398,23 @@ table th {
 }
 
 /* Hero-Page */
-.hero{
+
+.hero {
   width: 90%;
   position: absolute;
-  top: 62%; 
-  left: 50%;
+  top: 62%;
+  left: 52%;
   transform: translate(-50%, -50%);
 }
 
-.hero-page{
+.hero-page {
   color: whitesmoke;
   display: flex;
   justify-content: space-between;
   text-align: left;
 }
 
-.hero-page p{
+.hero-page p {
   margin-top: 0.1rem;
   margin-bottom: 1.5rem;
   font-size: 0.875rem;
@@ -421,47 +422,60 @@ table th {
   font-weight: 500;
   line-height: 125%;
   letter-spacing: 0.15rem;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
-.hero-btn{
+.hero-btn {
   display: inline-block;
   text-decoration: none;
   color: white;
-  border: 0.0625rem solid #2D9CDB;
+  border: 0.0625rem solid #2d9cdb;
   border-radius: 0.2rem;
   padding: 0.75rem 2.125rem;
   font-size: 0.8125rem;
-  background: #2D9CDB;
+  background: #2d9cdb;
   position: relative;
   cursor: pointer;
 }
 
-.hero-btn:hover{
-  color: #2D9CDB;
-  border: 0.0625rem solid #2D9CDB;
+.hero-btn:hover {
+  color: #2d9cdb;
+  border: 0.0625rem solid #2d9cdb;
   background: white;
   transition: 1s;
 }
 
-.playing{
+.playing .fa {
+  color: #2d9cdb;
   width: 5rem;
   margin-top: 4rem;
   margin-right: 12.5rem;
 }
 
-.playing:hover{
-  transform: scale(1.05);
+.playing .fa:hover {
+  color: grey;
+  transform: scale(1.1);
 }
 
 /* Footer */
 
-.navMain{
+.navMain {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
-.nav{
+
+.navMain .msg img{
+  position: fixed;
+  width: 3.5rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+
+.navMain .msg img:hover {
+  transform: scale(1.1);
+}
+
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -471,7 +485,7 @@ table th {
   padding-top: 1.25rem;
 }
 
-.nav p{
+.nav p {
   color: white;
   margin-top: -1.5rem;
   font-style: normal;
@@ -481,26 +495,26 @@ table th {
   letter-spacing: 0.009375rem;
 }
 
-.nav-links{
+.nav-links {
   flex: 1;
   text-align: right;
 }
 
-.nav-links ul li{
+.nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 0.5rem 0.75rem;
   position: relative;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
   color: whitesmoke;
   text-decoration: none;
   font-size: 0.85rem;
 }
 
-.nav-links ul li a::after{
-  content: "";
+.nav-links ul li a::after {
+  content: '';
   width: 0%;
   height: 0.125rem;
   background: white;
@@ -509,7 +523,7 @@ table th {
   transition: 0.5s;
 }
 
-.nav-links ul li a:hover::after{
+.nav-links ul li a:hover::after {
   width: 100%;
 }
 
@@ -571,8 +585,7 @@ table th {
   }
 
   /* Hero-Page */
-  .hero-page img{
+  .hero-page img {
     display: none;
   }
 }
-

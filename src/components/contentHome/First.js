@@ -35,7 +35,12 @@ const First = () => {
           </a>
         </section>
         <section className='playing'>
-          <img src='play.png' alt='play-button' />
+          <a href='#!'>
+            <i
+              className='fa fa-play-circle-o fa-5x'
+              aria-hidden='true'
+            ></i>
+          </a>
         </section>
       </section>
       <section className='navMain'>
@@ -69,9 +74,9 @@ const First = () => {
           </section>
         </section>
         <section className='msg'>
-              <a href='#!'>
-                <img src='M.png' alt='' style={{ position: 'fixed', width: '3.5rem', marginLeft: '2rem', marginTop: '3rem' }} />
-              </a>
+          <a href='#!'>
+            <img src='M.png' alt='' />
+          </a>
         </section>
       </section>
     </section>
