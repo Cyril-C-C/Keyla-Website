@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
-import './Navbar.css';
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -33,7 +32,7 @@ const Navbar = () => {
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
               <Link to='#' className='menu-bars'>
-              <i className='fa fa-close fa-2x' />
+              <i className='fa fa-close' />
               </Link>
             </li>
             {SidebarData.map((item, index) => {

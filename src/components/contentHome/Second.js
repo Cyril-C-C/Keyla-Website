@@ -49,17 +49,20 @@ export const Second = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <section className='forms' style={{ backgroundImage: `url(second1.png)` }}>
+    <form onSubmit={onSubmit} >
       <h2 className='text-primary'>
-        {current ? 'Edit Contact' : 'Add Contact'}
+        LET'S HELP YOU REACH YOUR GOAL...
       </h2>
+      <p>Answer three questions to help us achieve our expertise<br />and software solutions to your need.</p>
+      <span>QUESTION 1/3</span> <br />
+      <span>WHAT SERVICE(S) DO YOU NEED?</span>
       <input
         type='text'
-        placeholder='Name'
+        placeholder=''
         name='name'
         value={name}
         onChange={onChange}
-        required
       />
       <input
         type='email'
@@ -77,7 +80,6 @@ export const Second = () => {
         onChange={onChange}
         required
       />
-      <h5>Contact Type</h5>
       <input
         type='radio'
         name='type'
@@ -86,30 +88,26 @@ export const Second = () => {
         onChange={onChange}
       />{' '}
       Personal{' '}
-      <input
+      <p style={{ borderBlock: '2m solid black'}}><input
         type='radio'
         name='type'
         value='professional'
         checked={type === 'professional'}
         onChange={onChange}
       />{' '}
-      Professional
-      <div>
+      Professional</p>
+      <section>
         <input
           type='submit'
-          value={current ? 'Update Contact' : 'Add Contact'}
+          value='Next'
           className='btn btn-primary btn-block'
         />
-      </div>
-      {current && (
-        <div>
-          <button className='btn btn-light btn-block' onClick={clearAll}>
-            Next
-          </button>
-        </div>
-      )}
-      ;
+      </section>
+        <section>
+          <a href="#!"><img src="arrow.png" alt="" />Back</a>
+          </section>
     </form>
+    </section>
   );
 };
 

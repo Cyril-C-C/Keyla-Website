@@ -9,9 +9,11 @@ import Home from './components/pages/Home';
 
 import Spinner from './components/layout/Spinner';
 
+import 'materialize-css/dist/css/materialize.min.css';
+import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 
-function App() {
+const App = () => {
   // Page Loader
 
   const [loading, setLoading] = useState(false);
@@ -22,6 +24,11 @@ function App() {
       setLoading(false);
     }, 3000);
   }, []);
+
+  useEffect(() => {
+    // Init Materialize JS
+    M.AutoInit();
+  });
 
   return (
     <Router>
