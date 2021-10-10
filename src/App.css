@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat';
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -388,18 +388,18 @@ table th {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.7rem 3rem;
+  padding: 0.5rem 3.5rem;
   z-index: 1;
   width: 95%;
   opacity: 0.9;
-  margin-top: 1.5rem;
+  margin-top: -0.5rem;
 }
 
 .logo {
   width: 12rem;
 }
 
-.bar .fa:hover {
+.bar .medium:hover {
   color: #2d9cdb;
 }
 
@@ -423,7 +423,7 @@ table th {
   background-color: #060b26;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -452,7 +452,7 @@ table th {
 
 .nav-text {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
@@ -484,7 +484,7 @@ table th {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -497,7 +497,7 @@ span {
 .hero {
   width: 90%;
   position: absolute;
-  top: 62%;
+  top: 59.8%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
@@ -507,6 +507,16 @@ span {
   display: flex;
   justify-content: space-between;
   text-align: left;
+}
+
+.hero-page h1 {
+  position: relative;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  line-height-step: -0.03125rem;
+  left: -3%;
 }
 
 .hero-page p {
@@ -540,14 +550,14 @@ span {
   transition: 1s;
 }
 
-.playing .fa {
+.playing .large {
   color: #2d9cdb;
   width: 5rem;
-  margin-top: 4rem;
-  margin-right: 12.5rem;
+  margin-top: 5.5rem;
+  margin-right: 18.5rem;
 }
 
-.playing .fa:hover {
+.playing .large:hover {
   color: grey;
   transform: scale(1.1);
 }
@@ -559,7 +569,15 @@ span {
   align-items: center;
 }
 
-.navMain .msg img{
+.large img:hover {
+  transform: scale(1.1);
+}
+
+.btn-floating .material-icons:hover {
+  transform: scale(1.1);
+}
+
+/* .navMain .msg img{
   position: fixed;
   width: 3.5rem;
   margin-left: 1rem;
@@ -568,7 +586,7 @@ span {
 
 .navMain .msg img:hover {
   transform: scale(1.1);
-}
+} */
 
 .nav {
   display: flex;
@@ -576,13 +594,13 @@ span {
   align-items: center;
   gap: 31rem;
   border-top: 0.1rem solid grey;
-  margin-top: 10rem;
+  margin-top: 9rem;
   padding-top: 1.25rem;
 }
 
 .nav p {
   color: white;
-  margin-top: -1.5rem;
+  margin-top: -0.25rem;
   font-style: normal;
   font-weight: bold;
   font-size: 1.3125rem;
@@ -620,6 +638,79 @@ span {
 
 .nav-links ul li a:hover::after {
   width: 100%;
+}
+
+/* Fourth */
+
+.header1 {
+  min-height: 100vh;
+  width: 100%;
+  background: #FF8B2A;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  overflow-x: hidden;
+  left: 0;
+}
+
+.hero1 {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-page1 {
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.kex img {
+  width: 30%;
+}
+
+.hero-page1 h1 {
+  position: relative;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  line-height-step: -0.03125rem;
+  left: -3%;
+}
+
+.hero-page1 p {
+  margin-top: 0.1rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0.15rem;
+  color: #fff;
+}
+
+.hero-btn1 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.2rem;
+  padding: 0.75rem 2.125rem;
+  font-size: 0.8125rem;
+  background: #FF8B2A;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn1:hover {
+  color: #FF8B2A;
+  border: 0.0625rem solid #FF8B2A;
+  background: white;
+  transition: 1s;
 }
 
 /* Animation (Add After) */

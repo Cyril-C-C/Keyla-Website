@@ -6,17 +6,9 @@ const First = () => {
       <section className='hero-page'>
         <section>
           <h1>
-            <span
-              style={{
-                fontSize: '3rem',
-                fontStyle: 'normal',
-                fontWeight: '800',
-                lineHeight: '120%',
-                lineHeightStep: '-0.03125rem',
-              }}
-            >
+            <span>
               NEXT LEVEL
-              <br /> <span style={{ color: '#2D9CDB' }}>TECH</span> &{' '}
+              <br /> <span style={{ color: '#2D9CDB' }}>TECH</span> &{''}
               <span style={{ color: '#2D9CDB' }}>CONSULTING</span>
             </span>
           </h1>
@@ -36,10 +28,7 @@ const First = () => {
         </section>
         <section className='playing'>
           <a href='#!'>
-            <i
-              className='fa fa-play-circle-o fa-5x'
-              aria-hidden='true'
-            ></i>
+            <i className='large material-icons'>play_circle_outline</i>
           </a>
         </section>
       </section>
@@ -73,11 +62,11 @@ const First = () => {
             </ul>
           </section>
         </section>
-        <section className='msg'>
+        {/* <section className='msg'>
           <a href='#!'>
             <img src='M.png' alt='' />
           </a>
-        </section>
+        </section> */}
       </section>
     </section>
   );

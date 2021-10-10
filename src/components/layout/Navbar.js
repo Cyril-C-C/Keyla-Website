@@ -24,7 +24,7 @@ const Navbar = () => {
         <section className='bar'>
           <h1>
             <Link href='#'>
-              <i className='fa fa-bars fa-2x' aria-hidden='true' onClick={showSidebar}></i>
+              <i className='medium material-icons' onClick={showSidebar}>menu</i>
             </Link>
           </h1>
         </section>

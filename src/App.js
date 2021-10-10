@@ -8,6 +8,7 @@ import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
 
 import Spinner from './components/layout/Spinner';
+import AddBtn from './components/layout/AddBtn';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js';
@@ -36,6 +37,7 @@ const App = () => {
         <Fragment>
           <Navbar />
           <section className='container'>
+            <AddBtn />
             <Switch>
               <Route exact path='/' component={Home} />
             </Switch>
